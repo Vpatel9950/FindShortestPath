@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dijkstra Shortest Path Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dijkstra’s Algorithm Visualizer</h1>
+
+    <div class="controls">
+      <label for="startVertex">Start Node:</label>
+      <input type="text" id="startVertex" placeholder="Enter start (e.g. A)" />
+
+      <label for="endVertex">End Node:</label>
+      <input type="text" id="endVertex" placeholder="Enter end (e.g. I)" />
+
+      <button id="runBtn">Run Dijkstra</button>
+    </div>
+
+    <canvas id="graphCanvas" width="800" height="500"></canvas>
+
+    <h2>Shortest Path Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Node</th>
+          <th>Known</th>
+          <th>Cost</th>
+          <th>Path So Far</th>
+        </tr>
+      </thead>
+      <tbody id="resultTable">
+        <tr><td colspan="4">No data yet</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
